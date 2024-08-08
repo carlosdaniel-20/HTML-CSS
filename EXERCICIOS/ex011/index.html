@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho de seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagens flexível">
+    </picture>
+
+    <h1>reproduzindo aúdio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio src="midia/Shiloh Dynasty - Novacaine (Speed Up + Reverb) (320 kbps).mp3" controls autoplay></audio>
+
+    <p>adicionar de outro jeito para maior compatilidade com outros navegadores</p>
+
+    <audio preload="metadata" autoplay controls loop>
+       <source src="midia/Shiloh Dynasty - Novacaine (Speed Up + Reverb) (320 kbps).mp3" type="audio/mpeg">
+       <source src="midia/Shiloh Dynasty - Novacaine (Speed Up + Reverb) (320 kbps).ogg" type="audio/ogg">
+       <source src="midia/Shiloh Dynasty - Novacaine (Speed Up + Reverb) (320 kbps).wav" type="audio/wav">
+       <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
+    </audio>
+   
+    
+</body>
+</html>
